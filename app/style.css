@@ -1,0 +1,231 @@
+/* Общие стили */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header & Search --- */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Стили для иконок в шапке */
+header nav a {
+    margin-left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+header .material-icons {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 40px;
+    max-width: 500px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+/* --- Product Grid & Cards --- */
+.product-section h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    /* УДАЛЕНО: text-align: center; */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 125%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    /* УДАЛЕНО: display: flex и центрирование, чтобы не показывать пустой текст */
+}
+
+/* Стиль для кнопки "Избранное" */
+.favorite-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 10;
+    line-height: 1;
+}
+
+/* Стиль для самой иконки внутри кнопки избранного */
+.favorite-icon-inner {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.favorite-btn.is-favorite .favorite-icon-inner {
+    color: #d9534f;
+    text-shadow: none;
+}
+
+/* --- Корзина (Цены) --- */
+.card-info .price {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    /* Текст будет слева по умолчанию */
+    text-align: left;
+}
+
+.card-info .current-price {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.card-info .price del {
+    color: #999;
+    font-size: 14px;
+}
+
+.card-info .name {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    min-height: 32px;
+    /* Текст будет слева по умолчанию */
+    text-align: left;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: 600;
+}
+
+.add-to-cart-btn[data-in-cart="true"] {
+    background-color: #5cb85c;
+}
+
+.add-to-cart-btn[data-in-cart="true"]:hover {
+    background-color: #d9534f;
+}
+
+.product-card.hidden {
+    display: none;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+/* --- Адаптивность --- */
+
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-bar {
+        order: 3;
+        flex-basis: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

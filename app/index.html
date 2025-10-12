@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин одежды "Роскошный"| Каталог</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <a href="/" class="logo">
+            <i class="material-icons">home</i>
+        </a>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Поиск товаров...">
+        </div>
+        <nav>
+            <a href="#" id="favorites-link">
+                <i class="material-icons">favorite_border</i>
+            </a>
+            <a href="#">
+                <i class="material-icons">shopping_cart</i>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="product-section" data-category="Худи">
+        <h2>Худи</h2>
+        <div class="product-grid" id="hoodiesGrid">
+
+            <article class="product-card" data-name="Худи роскошное" data-price="6999">
+                <div class="image-wrapper">
+                    <div class="image-placeholder"></div>
+                    <button class="favorite-btn" aria-label="Добавить в избранное">
+                            <span class="favorite-icon">
+                                <i class="material-icons favorite-icon-inner">favorite_border</i>
+                            </span>
+                    </button>
+                </div>
+                <div class="card-info">
+                        <span class="price">
+                            <span class="current-price">6999 ₽</span> <del>999 ₽</del>
+                        </span>
+                    <p class="name">Худи роскошное</p>
+                    <button class="add-to-cart-btn" data-in-cart="false">В корзину</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Худи оверсайз (серое)" data-price="1299">
+                <div class="image-wrapper">
+                    <div class="image-placeholder"></div>
+                    <button class="favorite-btn" aria-label="Добавить в избранное">
+                            <span class="favorite-icon">
+                                <i class="material-icons favorite-icon-inner">favorite_border</i>
+                            </span>
+                    </button>
+                </div>
+                <div class="card-info">
+                        <span class="price">
+                            <span class="current-price">1299 ₽</span> <del>1499 ₽</del>
+                        </span>
+                    <p class="name">Худи оверсайз (серое)</p>
+                    <button class="add-to-cart-btn" data-in-cart="false">В корзину</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Худи Премиум с вышивкой в Дымковском стиле" data-price="9999">
+                <div class="image-wrapper"><div class="image-placeholder"></div><button class="favorite-btn" aria-label="Добавить в избранное"><span class="favorite-icon"><i class="material-icons favorite-icon-inner">favorite_border</i></span></button></div>
+                <div class="card-info"><span class="price"><span class="current-price">9999 ₽</span></span><p class="name">Худи Премиум с вышивкой в Дымковском стиле</p><button class="add-to-cart-btn" data-in-cart="false">В корзину</button></div>
+            </article>
+
+            <article class="product-card" data-name="Худи с принтом 'Эльбрус'" data-price="1399">
+                <div class="image-wrapper"><div class="image-placeholder"></div><button class="favorite-btn" aria-label="Добавить в избранное"><span class="favorite-icon"><i class="material-icons favorite-icon-inner">favorite_border</i></span></button></div>
+                <div class="card-info"><span class="price"><span class="current-price">1399 ₽</span></span><p class="name">Худи с принтом "Эльбрус"</p><button class="add-to-cart-btn" data-in-cart="false">В корзину</button></div>
+            </article>
+
+            <article class="product-card" data-name="Толстовка на молнии (Хакки)" data-price="2199">
+                <div class="image-wrapper"><div class="image-placeholder"></div><button class="favorite-btn" aria-label="Добавить в избранное"><span class="favorite-icon"><i class="material-icons favorite-icon-inner">favorite_border</i></span></button></div>
+                <div class="card-info"><span class="price"><span class="current-price">2199 ₽</span></span><p class="name">Толстовка на молнии (Хакки)</p><button class="add-to-cart-btn" data-in-cart="false">В корзину</button></div>
+            </article>
+
+            <article class="product-card" data-name="Чёрный" data-price="999">
+                <div class="image-wrapper"><div class="image-placeholder"></div><button class="favorite-btn" aria-label="Добавить в избранное"><span class="favorite-icon"><i class="material-icons favorite-icon-inner">favorite_border</i></span></button></div>
+                <div class="card-info"><span class="price"><span class="current-price">999 ₽</span> <del>1200 ₽</del></span><p class="name">Чёрный</p><button class="add-to-cart-btn" data-in-cart="false">В корзину</button></div>
+            </article>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="product-section" data-category="Шорты">
+        <h2>Шорты</h2>
+        <div class="product-grid" id="shortsGrid">
+
+            <article class="product-card" data-name="Пляжные шорты (жёлтые)" data-price="550">
+                <div class="image-wrapper">
+                    <div class="image-placeholder"></div>
+                    <button class="favorite-btn" aria-label="Добавить в избранное">
+                            <span class="favorite-icon">
+                                <i class="material-icons favorite-icon-inner">favorite_border</i>
+                            </span>
+                    </button>
+                </div>
+                <div class="card-info">
+                        <span class="price">
+                            <span class="current-price">550 ₽</span>
+                        </span>
+                    <p class="name">Пляжные шорты (жёлтые)</p>
+                    <button class="add-to-cart-btn" data-in-cart="false">В корзину</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Шорты Люкс (Леопард)" data-price="7999">
+                <div class="image-wrapper">
+                    <div class="image-placeholder"></div>
+                    <button class="favorite-btn" aria-label="Добавить в избранное">
+                            <span class="favorite-icon">
+                                <i class="material-icons favorite-icon-inner">favorite_border</i>
+                            </span>
+                    </button>
+                </div>
+                <div class="card-info">
+                        <span class="price">
+                            <span class="current-price">7990 ₽</span> <del>79990 ₽</del>
+                        </span>
+                    <p class="name">Шорты Люкс (Леопард)</p>
+                    <button class="add-to-cart-btn" data-in-cart="false">В корзину</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Шорты с карманами" data-price="1500">
+                <div class="image-wrapper"><div class="image-placeholder"></div><button class="favorite-btn" aria-label="Добавить в избранное"><span class="favorite-icon"><i class="material-icons favorite-icon-inner">favorite_border</i></span></button></div>
+                <div class="card-info"><span class="price"><span class="current-price">1500 ₽</span></span><p class="name">Шорты с карманами</p><button class="add-to-cart-btn" data-in-cart="false">В корзину</button></div>
+            </article>
+
+            <article class="product-card" data-name="Шорты кружевные(белые)" data-price="650">
+                <div class="image-wrapper"><div class="image-placeholder"></div><button class="favorite-btn" aria-label="Добавить в избранное"><span class="favorite-icon"><i class="material-icons favorite-icon-inner">favorite_border</i></span></button></div>
+                <div class="card-info"><span class="price"><span class="current-price">650 ₽</span> <del>899 ₽</del></span><p class="name">Шорты кружевные(белые)</p><button class="add-to-cart-btn" data-in-cart="false">В корзину</button></div>
+            </article>
+
+            <article class="product-card" data-name="Шорты 'Abibas'" data-price="850">
+                <div class="image-wrapper"><div class="image-placeholder"></div><button class="favorite-btn" aria-label="Добавить в избранное"><span class="favorite-icon"><i class="material-icons favorite-icon-inner">favorite_border</i></span></button></div>
+                <div class="card-info"><span class="price"><span class="current-price">850 ₽</span></span><p class="name">Шорты "Abibas"</p><button class="add-to-cart-btn" data-in-cart="false">В корзину</button></div>
+            </article>
+
+            <article class="product-card" data-name="Шорты шёлковые (Красные)" data-price="1350">
+                <div class="image-wrapper"><div class="image-placeholder"></div><button class="favorite-btn" aria-label="Добавить в избранное"><span class="favorite-icon"><i class="material-icons favorite-icon-inner">favorite_border</i></span></button></div>
+                <div class="card-info"><span class="price"><span class="current-price">1350 ₽</span></span><p class="name">Шорты шёлковые (Красные)</p><button class="add-to-cart-btn" data-in-cart="false">В корзину</button></div>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        © 2025 Магазин | Политика и безопасность | Cookie
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
