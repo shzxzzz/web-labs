@@ -1,4 +1,3 @@
-/* Общие стили */
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -13,7 +12,6 @@ body {
     padding: 20px;
 }
 
-/* --- Header & Search --- */
 header {
     background-color: #fff;
     border-bottom: 1px solid #eee;
@@ -35,7 +33,6 @@ header {
     color: #000;
 }
 
-/* Стили для иконок в шапке */
 header nav a {
     margin-left: 15px;
     font-size: 20px;
@@ -61,7 +58,6 @@ header .material-icons {
     border-radius: 20px;
 }
 
-/* --- Product Grid & Cards --- */
 .product-section h2 {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -81,7 +77,6 @@ header .material-icons {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;
-    /* УДАЛЕНО: text-align: center; */
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -107,10 +102,9 @@ header .material-icons {
     width: 100%;
     height: 100%;
     background-color: #eee;
-    /* УДАЛЕНО: display: flex и центрирование, чтобы не показывать пустой текст */
 }
 
-/* Стиль для кнопки "Избранное" */
+/* для кнопки избранное */
 .favorite-btn {
     position: absolute;
     top: 5px;
@@ -123,7 +117,7 @@ header .material-icons {
     line-height: 1;
 }
 
-/* Стиль для самой иконки внутри кнопки избранного */
+/* для самой иконки внутри кнопки избранного */
 .favorite-icon-inner {
     font-size: 24px;
     color: #fff;
@@ -136,12 +130,11 @@ header .material-icons {
     text-shadow: none;
 }
 
-/* --- Корзина (Цены) --- */
+/* корзина */
 .card-info .price {
     display: block;
     margin-bottom: 5px;
     font-size: 16px;
-    /* Текст будет слева по умолчанию */
     text-align: left;
 }
 
@@ -161,7 +154,6 @@ header .material-icons {
     margin: 0 0 10px 0;
     font-size: 14px;
     min-height: 32px;
-    /* Текст будет слева по умолчанию */
     text-align: left;
 }
 
@@ -189,7 +181,6 @@ header .material-icons {
     display: none;
 }
 
-/* --- Footer --- */
 footer {
     margin-top: 50px;
     padding: 20px 0;
@@ -199,7 +190,6 @@ footer {
     text-align: center;
 }
 
-/* --- Адаптивность --- */
 
 @media (max-width: 1024px) {
     .product-grid {
